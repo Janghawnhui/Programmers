@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -13,10 +13,8 @@ public class Main {
 
         if(costs[A] <= costs[B]) {
             parents[B]=A;
-            costs[A] = Math.min(costs[A],costs[B]);
         } else {
             parents[A]=B;
-            costs[B] = Math.min(costs[A],costs[B]);
         }
     }
     static private int find(int a) {
